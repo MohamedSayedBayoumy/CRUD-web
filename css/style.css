@@ -1,0 +1,157 @@
+body {
+    font-family: "PT Sans Caption", sans-serif;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+table {
+    vertical-align: baseline !important;
+}
+
+
+
+main {
+    min-height: 100vh;
+    background-color: #f7ecde;
+}
+
+main h1 {
+    font-family: "Pacifico", cursive;
+    color: #2a2018;
+    font-size: 3rem;
+
+}
+
+main h1::before {
+    content: "";
+    bottom: 9px;
+    z-index: 1;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    transition: height .8s;
+    background-color: #e8b96e90;
+    height: 28%;
+
+}
+
+main h1:hover:before {
+    height: 60%;
+}
+
+.page {
+    border-bottom: 2.2px dotted #2b241e;
+    border-top: 2.2px dotted #2b2520;
+}
+
+.page h2 {
+    background-clip: text;
+    background-image: linear-gradient(to right, #40b964, #bab255);
+    font-size: 1.85055rem;
+    -webkit-text-fill-color: transparent;
+    font-family: "Righteous", cursive;
+
+}
+
+.form-control:focus {
+    color: #1f2225;
+    box-shadow: #ffc05b55 0 0 0 0.20rem;
+    background-color: #ffff;
+    border-color: #d69e43;
+    outline: 0;
+
+}
+
+ 
+
+.ainmation p::after {
+    content: "|";
+    font-size: 40px;
+    font-weight: 500;
+    animation: typing 9s 1s infinite;
+}
+@keyframes typing {
+       0% {
+        content: "F|";
+    }
+
+    1.5% {
+        content: "Fr|";
+    }
+
+    3% {
+        content: "Fre|";
+    }
+
+    4.5% {
+        content: "Free|";
+    }
+
+    6% {
+        content: "Freel|";
+    }
+
+    7.5% {
+        content: "Freela|";
+    }
+
+    9% {
+        content: "Freelan|";
+    }
+
+    10.5% {
+        content: "Freelanc|";
+    }
+
+    12% {
+        content: "Freelance|";
+    }
+
+    13.5% {
+        content: "Freelancer|";
+    }
+
+    14.5% {
+        content: "Freelanc|";
+    }
+
+}
+
+.btn-danger {
+    --bs-btn-color: #ffff;
+    --bs-btn-bg: red;
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-color: red;
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-border-color: transparent;
+}
+
+.btn-visit {
+    --bs-btn-color: #ffff;
+    --bs-btn-bg: #a8bd40;
+    --bs-btn-border-color: #9eb23b;
+    --bs-btn-hover-color: green;
+    --bs-btn-hover-bg: #fff;
+    --bs-btn-hover-border-color: transparent;
+}
+
+
+.btn-submit {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #d34922;
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-bg: white;
+    --bs-btn-hover-border-color: white;
+}
+
+::selection {
+    background-color: #ffbc50;
+    color: #302922;
+}

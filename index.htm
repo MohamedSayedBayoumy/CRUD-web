@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <title>BookMark</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main class="position-relative py-5">
+      <!-- <img src="assets/detective.png" alt=""> -->
+
+      <div
+        class="container d-flex flex-column align-items-center justify-content-center"
+      >
+        <h1 class="py-2 position-relative">Bookmarker</h1>
+        <!-- title -->
+        <!-- Form -->
+        <div
+          class="page gap-4 p-3 mt-5 w-100 d-flex align-items-center justify-content-center flex-column"
+        >
+          <h2>
+            <i class="fa-solid fa-bookmark"></i>
+            <span>Bookmark your favorite sites</span>
+            <i class="fa-solid fa-bookmark"></i>
+          </h2>
+          <div
+            class="site-name w-100 d-flex flex-column justify-content-center"
+          >
+            <label for="siteName" class="pb-2 fw-semibold">
+              <i class="fa-solid fa-book-bookmark pe-2"></i>
+              Site Name</label
+            >
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Bookmark Name.. ."
+              id="siteName"
+            />
+          </div>
+          <!-- Second Filed -->
+          <div
+            class="site-name w-100 d-flex flex-column justify-content-center"
+          >
+            <label class="fw-semibold pb-1" for="urlSite">
+              <i class="fa-solid fa-link"></i>
+              Site URL</label
+            >
+            <input
+              class="form-control"
+              placeholder="website URL.. ."
+              type="url"
+              id="urlSite"
+            />
+          </div>
+          <!-- Button -->
+          <button class="btn-submit btn" id="submitBtn">Submit</button>
+        </div>
+        <table class="table bg-light text-center mt-4">
+          <thead>
+            <th class="text-capitalize">#</th>
+            <th class="text-capitalize">website Name</th>
+            <th class="text-capitalize">Visit</th>
+            <th class="text-capitalize">Delete</th>
+          </thead>
+          <tbody id="tableRow"></tbody>
+        </table>
+      </div>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
